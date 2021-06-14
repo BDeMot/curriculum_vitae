@@ -43,6 +43,10 @@
     margin: 0;
 }
 
+.step a {
+    color: #7451EB;
+}
+
 .step .step-title {
     font-weight: 500
 }

@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang='fr'>
     <head>
-        <title>Développeur fullstack en recherche d'emploi - John Doe</title>
         <meta charset="utf-8"/>
-        <meta name="author" content="john doe"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="Hello, je suis John Doe, développeur fullstack spécialisé React/Tailwind, actuellement en poste chez Blablacar dans la ville de Paris, France."/>
+        <meta name="author" content="Benjamin De Mot"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>."/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Développeur fullstack en recherche d'emploi - John Doe"/>
-        <meta property="og:image" content="https://nicolasbrondin.github.io/john-doe/src/img/open-graph.jpg"/>
-        <meta property="og:description" content="Hello, je suis John Doe, développeur fullstack spécialisé React/Tailwind, actuellement en poste chez Blablacar dans la ville de Paris, France."/>
-        <meta name="twitter:title" content="Développeur fullstack en recherche d'emploi - John Doe"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image" content="https://nicolasbrondin.github.io/john-doe/src/img/open-graph.jpg"/>
-        <meta name="twitter:description" content="Hello, je suis John Doe, développeur fullstack spécialisé React/Tailwind, actuellement en poste chez Blablacar dans la ville de Paris, France."/>
+        <meta property="og:title" content="Développeur front-end en recherche d'emploi - Benjamin De Mot"/>
+        <meta property="og:description" content="Salutations, je suis Benjamin, développeur front-end junior spécialisé en Javascript, en région parisienne."/>
+        <meta name="twitter:title" content="Développeur front-end en recherche d'emploi - Benjamin De Mot" />
+        <meta name="twitter:description" content="Salutations, je suis Benjamin, développeur front-end junior spécialisé en Javascript, en région parisienne."/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./src/css/base.css"/>
@@ -22,22 +17,23 @@
         <link rel="stylesheet" href="./src/css/path.css"/>
         <link rel="stylesheet" href="./src/css/skill-box.css"/>
         <link rel="stylesheet" href="./src/css/list.css"/>
-        <link rel="favicon" href="./src/img/favicon.png"/>
+        <link rel="favicon" href="./src/img/favicon.png"/> <!--TODO a custom favicon (a circle with BDM inside) -->
+        <title>Benjamin De Mot</title>
     </head>
     <body>
         <div class="page">
             <div class="card" id="person">
-                <img id="person-picture" src=""/>
-                <img id="person-country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
+                <img id="person-picture" src="src/img/profilpic.png"/ alt="Benjamin De Mot">
+                <img id="person-country" src="https://image.flaticon.com/icons/svg/197/197560.svg" alt="France"/>
                 <section>
-                    <h1 id="person-fullname"></h1>
+                    <h1 id="person-fullname">Benjamin De Mot</h1>
                     <h2 id="person-job"></h2>
-                    <p>Hello, je suis <strong id="person-firstname"></strong>, <strong id="person-position"></strong> spécialisé(e) en <strong id="person-speciality"></strong> actuellement <strong id="person-company"></strong> dans la ville de <strong id="person-city">Nantes</strong>.</p>
+                    <p>Salutations, je suis <strong id="person-firstname">Benjamin</strong>, développeur <strong id="person-position">front-end</strong> junior spécialisé en <strong id="person-speciality">Javascript</strong> actuellement <strong id="person-company"></strong> en <strong id="person-city">région parisienne</strong>.</p>
                     <div>
-                        <a class="button" target="_blank" id="person-email">M'envoyer un email</a>
-                        <span class="or"> ou </span>
-                        <a target="_blank" class="button" href="https://welovedevs.com">Voir mon CV</a>
-                    </div>
+                        <a href='mailto:benjamindm@hotmail.fr' class="button" target="_blank" id="person-email">M'envoyer un email</a>
+                       <!-- <span class="or"> ou </span>
+                        <a target="_blank" class="button" href="https://welovedevs.com">Voir mon CV</a> //TODO add a CV
+                   --> </div>
                     <hr/>
                 </section>
                 <section>
@@ -72,7 +68,7 @@
                         </li>
                         <li>
                             <div class="skill-box">
-                                Tailwind
+                                Sass
                                 <div class="box-well">
                                     CSS
                                 </div>
@@ -88,9 +84,33 @@
                         </li>
                         <li>
                             <div class="skill-box">
-                                Heroku
+                                Node.js
                                 <div class="box-well">
-                                    Cloud
+                                    Runtime
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-box">
+                                Express
+                                <div class="box-well">
+                                    Framework
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-box">
+                                MongoDB
+                                <div class="box-well">
+                                    SGBD
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-box">
+                                MySQL
+                                <div class="box-well">
+                                    SGBD
                                 </div>
                             </div>
                         </li>
@@ -100,24 +120,61 @@
                 <section>
                     <h3>Réalisations</h3>
                     <div class="thumbnail" >
-                        <div class="thumbnail-cover" style="background-image: url(https://source.unsplash.com/random/800*600?code)"></div>
+                        <div class="thumbnail-cover" style="background-image: url(src/img/unnamed.jpg)"></div>
                         <div class="thumbnail-content">
-                            <span class="badge">Game Jam</span>
-                            <p class="thumbnail-title">Pac-Man </p>
-                            <p class="thumbnail-description">Une version de pac-man avec une surprise en plus...</p>
+                            <span class="badge">Extension Chrome</span>
+                            <p class="thumbnail-title">PrevYou</p>
+                            <p class="thumbnail-description">Extension open source pour Chrome, avec <a href="https://twitter.com/benjamincodeYT" target="_blank"> Benjamin Code</a>.</p>
                             <div class="thumbnail-footer">
-                                <a href="google.fr" target="_blank">En savoir plus</a>
+                                <a href="https://github.com/bdebon/youtube-thumbnail-tester-chrome-extension" target="_blanck">En savoir plus</a>
                             </div>
                         </div>
                     </div>
                     <div class="thumbnail" >
-                        <div class="thumbnail-cover" style="background-image: url(https://source.unsplash.com/random/800*600?shop)"></div>
+                        <div class="thumbnail-cover" style="background-image: url(src/img/groupogags.png)"></div>
                         <div class="thumbnail-content">
-                            <span class="badge">Application</span>
-                            <p class="thumbnail-title">Shop'n Go </p>
-                            <p class="thumbnail-description">Application d'achat en ligne sécurisé from scratch</p>
+                            <span class="badge">Web App</span>
+                            <p class="thumbnail-title">Groupogags </p>
+                            <p class="thumbnail-description">Développement fullstack d'un réseau social type 9gag.</p>
                             <div class="thumbnail-footer">
-                                <a href="google.fr" target="_blank">En savoir plus</a>
+                                <img src="src/img/openclassrooms.png" />
+                                <a href="https://github.com/BDeMot" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/sopeckoko.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Web App</span>
+                            <p class="thumbnail-title">So Pekocko </p>
+                            <p class="thumbnail-description">Réalisation d'une API.</p>
+                            <div class="thumbnail-footer">
+                                <img src="src/img/openclassrooms.png" />
+                                <a href="https://github.com/BDeMot" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/homyfood.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Site web</span>
+                            <p class="thumbnail-title">ohmyfood!  </p>
+                            <p class="thumbnail-description">Intégration d'une maquette.</p>
+                            <div class="thumbnail-footer">
+                                <img src="src/img/openclassrooms.png" />
+                                <a href="https://github.com/BDeMot/DeMotBenjamin_3_11012021mmm" target="_blank">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thumbnail" >
+                        <div class="thumbnail-cover" style="background-image: url(src/img/logo.png)"></div>
+                        <div class="thumbnail-content">
+                            <span class="badge">Web app</span>
+                            <p class="thumbnail-title">Orinoco</p>
+                            <p class="thumbnail-description">Réalisation du front-end pour une web app d'e-commerce.</p>
+                            <div class="thumbnail-footer">
+                                <img src="src/img/openclassrooms.png" />
+                                <a href="https://github.com/BDeMot/DeMotBenjamin_5_11012021" target="_blank">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -127,21 +184,26 @@
                     <h3>Parcours</h3>
                     <div class="path">
                         <div class="step">
-                            <p class="step-title">Google - 2018 à 2020</p>
-                            <p>Développeur fullstack React/Go sur l'application Google Maps</p>
+                             <p class="step-title">Openclassrooms - janvier à juillet 2021</p>
+                            <a href="https://openclassrooms.com/fr/paths/185-developpeur-web">
+                                Formation Développeur Web, diplôme RNCP niveau 5 (bac +2).
+                            </a>
                         </div>
                         <div class="step">
-                            <p class="step-title">Stage de fin d'études - Juin 2018</p>
-                            <p>Création d'une application de mise en relation entre particuliers et professionnels</p>
+                            <p class="step-title">Autoformation - à partir de Juin 2019</p>
+                            <p>Apprentissage en autodidace de HTML, CSS, Javascript sur des plateformes comme Openclassrooms, 
+                                Udemy, Sololearn...
+                            </p>
                         </div>
                         <div class="step">
-                            <p class="step-title">Wild code school - 2018</p>
-                            <p>Dîplomé d'un titre professionnel de développeur web et web mobile</p>
+                            <p class="step-title">Restauration - de 2010 à ce jour</p>
+                        </div>
+                        <div class="step">
+                            <p class="step-title">L1 Histoire en Sorbonne Paris IV  - 2009/2010</p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <script src="./src/js/main.js"></script>
     </body>
 </html>

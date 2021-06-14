@@ -94,3 +94,15 @@
     padding: 5px 10px;
     font-weight: 500;
 }
+
+.thumbnail-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumbnail-footer img{
+    width: 50%;
+    height: 50%;
+    margin-top: 7px;
+}
+
